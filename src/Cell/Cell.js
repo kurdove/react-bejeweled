@@ -1,8 +1,7 @@
 import React from 'react';
-import './Cell.css';
 
 const cell = (props) => {
-    return <img src={props.icon}></img>
+    return <img src={props.icon} alt={props.icon.split("/").pop()}></img>
 }
 
 export default cell;

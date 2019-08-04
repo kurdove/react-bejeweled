@@ -35,26 +35,17 @@ class App extends Component {
   }
 
   updateGrid = () => {
-    console.log('Was clicked!!!!');
-
     const newIcons = [...this.state.icons];
-
-    // console.log(newState);
     var i=0, j=0, temp = null
-    // var newArray = [];
+
     for (i=0; i<newIcons.length; i++) {
-      
       j=Math.floor(Math.random() * newIcons.length)
       temp = newIcons[i]
       newIcons[i] = newIcons[j]
       newIcons[j] = temp
     }
-    console.log('newIcons :',newIcons);
     this.setState({icons: newIcons});
-    console.log('newState :',this.state);
   }
-
-  // gridContent = <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>;
 
   render() {
     return (
@@ -62,12 +53,9 @@ class App extends Component {
         <h1>Welcome To Bejeweled</h1>
         <h3>Challenge yorself !</h3>
         <hr />
+        <button onClick={this.updateGrid}>New Grid</button>
 
         <div className="Grid-container">
-          {/* {this.state.icons.map(symbol => {
-            return <div><Cell icon={symbol.shape}/></div>
-          })} */}
-
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
@@ -139,9 +127,7 @@ class App extends Component {
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
           <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-
         </div>
-        <button onClick={this.updateGrid}>New Grid</button>
 
       </div>
     );
