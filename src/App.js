@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome To Bejeweled</h1>
-        <h3>Challenge yorself !</h3>
+        <h3>Challenge yourself !</h3>
         <hr />
         <button onClick={this.updateGrid}>New Grid</button>
 
