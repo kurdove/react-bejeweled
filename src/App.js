@@ -23,15 +23,10 @@ class App extends Component {
   }
 
   randomizer = () => {
-    Math.floor((Math.random() * 7) + 1)
-    // var icon = this.state.icons[Math.floor((Math.random() * 7) + 1)].shape;
-    // console.log (typeof icon);
-    // return icon;
-    // // let num = this.state.icons.length;
-    // var num = Math.floor((Math.random() * 7) + 1);
-    // console.log (num);
-    // console.log ('2nd log: ', this.state.icons[num].shape);
-    // // return num;
+    const n = this.state.icons.length;
+
+    var randomNum = Math.floor(Math.random() * n);
+    return randomNum;
   }
 
   updateGrid = () => {
@@ -56,77 +51,77 @@ class App extends Component {
         <button onClick={this.updateGrid}>New Grid</button>
 
         <div className="Grid-container">
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
 
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
           
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
-          <div><Cell icon={this.state.icons[Math.floor((Math.random() * 7) + 1)].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
+          <div><Cell icon={this.state.icons[this.randomizer()].shape}/></div>
         </div>
 
       </div>
